@@ -5,11 +5,16 @@
 .grid {
     max-width: 1000px;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     grid-template-rows: 100px 200px;
     grid-gap: 20px 40px;
     /*grid-column-gap: 20px;*/
     /*grid-row-gap: 15px;*/
     /*grid-template-columns: 20% 200px 300px;*/
     /*grid-template-columns: 200px 200px 200px;*/
+    /*grid-template-columns: 1fr 2fr 1fr;*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*grid-template-columns: 2fr repeat(2, 1fr) 2fr;*/
+    /*grid-template-columns: minmax(200px, 300px) 1fr 1fr;*/
+    /*grid-template-columns: minmax(150px, 1fr) 1fr 1fr;*/
 }
